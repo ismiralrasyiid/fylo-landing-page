@@ -1,0 +1,314 @@
+:root{
+    font-size: 14px;
+    --intro-and-signup-bg:hsl(217, 28%, 15%);
+    --main-bg:hsl(218, 28%, 13%);
+    --testimonial-bg:hsl(219, 30%, 18%);
+    --footer-bg:hsl(216, 53%, 9%);
+    --gradient-cyan:hsl(176, 68%, 64%);
+    --gradient-blue:hsl(198, 60%, 50%);
+    --error-color:hsl(0, 100%, 63%);
+}
+
+/* ==================== AFFECTING ALL ====================*/
+body{
+    background-color: var(--intro-and-signup-bg);
+    line-height: 1.6rem;
+}
+
+
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p,a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*==================== CUSTOM NAVBAR ====================*/
+
+.navbar .container-xxl{
+    background-color: var(--intro-and-signup-bg);
+}
+
+.nav-item{
+    margin-left: min(2rem, 3vw);
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+
+/* Custom Navbar Hover */
+
+.navbar .navbar-nav .nav-item:nth-child(1){
+    width: 67px;
+}
+
+.navbar .navbar-nav .nav-item:nth-child(2){
+    width: 43px;
+}
+
+.navbar .navbar-nav .nav-item:nth-child(3){
+    width: 54px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*==================== CUSTOM HEADER HERO SECTION ====================*/
+header .container-xxl.px-0{
+    background-color: var(--intro-and-signup-bg);
+    color: white;
+}
+
+/* Custom Button */
+
+header .container-xxl a.btn{
+    width: 230px;
+    color: white;
+    background-image: linear-gradient(to right, var(--gradient-cyan), var(--gradient-blue));
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+}
+
+header .container-xxl a.btn:hover{
+    background-image: linear-gradient(to right, var(--gradient-cyan), var(--gradient-cyan));
+}
+
+/* Custom SVG */
+header .container-xxl .container{
+    z-index: 1200;
+    padding-bottom: 150px;
+}
+
+.svg-375-minus-lower{
+    width: 100vw;
+    height: 320px;
+    background-color: var(--main-bg);
+}
+
+.svg-375-plus{
+    display: none;
+}
+
+.svg-375-plus-lower{
+    width: 100%;
+    height: 200px;
+    background-color: var(--main-bg);
+}
+
+@media only screen and (min-width: 376px) {
+    .svg-375-minus{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 376px) {
+    .svg-375-plus{
+        display:block;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .svg-375-plus-lower{
+        display:none;
+    }
+}
+
+
+
+/*==================== CUSTOM FEATURES SECTION ====================*/
+#features .container-xxl{
+    background-color: var(--main-bg);
+    color: white;
+}
+
+/*==================== CUSTOM TEAM SECTION ====================*/
+#team .container-xxl{
+    background-color: var(--main-bg);
+    color: white;
+}
+
+#team a{
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+#team a img{
+    margin-top: -1px;
+}
+
+#team a:hover{
+    filter: brightness(2);
+}
+
+/*==================== CUSTOM TESTIMONIAL SECTION ====================*/
+.testimonial .container-xxl{
+    background-color: var(--main-bg);
+    color: white;
+    padding-bottom: 150px;
+}
+
+.testimonial .custom-card{
+    background-color: var(--testimonial-bg);
+    max-width: 320px;
+    border-radius: 3px;
+}
+
+.img-container{
+    width: 40px;
+}
+
+.testimonial .custom-card img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-text p:first-child{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 3px;
+    line-height: 1.3rem;
+}
+
+.card-text p:last-child{
+    font-size: .8rem;
+    margin: 0;
+    line-height: 1.6rem;
+}
+
+.custom-card-text{
+    font-size: .9rem;
+}
+
+/*==================== CUSTOM SIGNUP SECTION ====================*/
+#signup .container-xxl{
+    background-image: linear-gradient(to bottom, hsl(218, 28%, 13%) 50%, hsl(216, 53%, 9%) 50%);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.custom-signup{
+    max-width: 900px;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 10px;
+}
+
+.custom-signup .btn{
+    color: white;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--gradient-cyan), var(--gradient-blue));
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+}
+.custom-signup .btn:hover{
+    background-image: linear-gradient(to right, var(--gradient-cyan), var(--gradient-cyan));
+}
+
+.custom-signup .form-control{
+    border-radius: 30px;
+    text-indent: 30px;
+}
+
+/*==================== CUSTOM FOOTER SECTION ====================*/
+footer .container-xxl{
+    background-color: var(--footer-bg);
+    color: white;
+}
+
+
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover{
+    font-weight: 700;
+    color: white;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/* .footer-logo .logo-mask{
+    width: 30px;
+    height: 30px;
+    background-color: var(--gradient-cyan);
+    border-radius: 50%;
+    border: 1px solid var(--gradient-cyan);
+    opacity: .8;
+} */
+
+.footer-logo li div{
+    width: 15px;
+    height: 15px;
+}
+
+.footer-logo li img{
+    filter: invert(1);
+}
+
+.footer-logo li:hover{
+    background-color: hsla(176, 68%, 64%,.7);
+}
+.btn-personal{
+    position: fixed;
+    right: 15px;
+    bottom: 45px;
+    z-index: 1300;
+}
+.btn-personal a{
+    display: flex;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: var(--main-bg);
+}
+.btn-personal a:hover .arrow-body{
+    text-decoration: underline;
+    transition: all .2s ease;
+}
+
+.btn-personal .arrow-head{
+    height: 60px;
+    width: 40px;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    background: white;
+}
+.btn-personal .arrow-body{
+    font-size: 11px;
+    line-height: 4px;
+    padding-top: 7px;
+    height: 40px;
+    width: 80px;
+    background: white;
+}
+.btn-personal .arrow-body p{
+    font-weight: bold;
+}
+
